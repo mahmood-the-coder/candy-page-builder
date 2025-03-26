@@ -7,6 +7,7 @@ function createWindow () {
     height: 600,
     webPreferences: {
         contextIsolation:false,
+        nodeIntegration:true,
     }
   })
 
@@ -28,3 +29,4 @@ app.on('window-all-closed', () => {
     app.quit()
   }
 })
+

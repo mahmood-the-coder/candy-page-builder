@@ -1,0 +1,7 @@
+.candyPage__sortableClone {
+    position: absolute;
+    scale: 1;
+    opacity: 0.8;
+    pointer-events: none;
+    transition: width 0.5s ease-in-out;
+}

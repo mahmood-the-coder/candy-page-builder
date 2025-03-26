@@ -1,0 +1,25 @@
+.candyPage__addSectionWrapper {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color);
+    background-color: var(--background);
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.candyDoc__sectionMenuButton {
+    cursor: pointer;
+    height: 30px;
+    width: fit-content;
+
+}

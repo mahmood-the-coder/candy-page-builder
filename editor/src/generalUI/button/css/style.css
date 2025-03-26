@@ -1,0 +1,23 @@
+.candyDoc__button {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.candyDoc__button.primary
+{
+    background-color: var(--color);
+    color: var(--background);
+
+}
+
+.candyDoc__button.secondary
+{
+
+    color: var(--color);
+    border:2px solid var(--color);
+    
+}
