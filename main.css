@@ -6,7 +6,9 @@
 @import url("./editor/src/flexSection/css/style.css");
 @import url("./utils/sort/css/style.css");
 @import url("./utils/resize/css/style.css");
-
+@import url("./editor/src/toolsMenu/css/style.css");
+@import url("./editor/src/toolItem/css/style.css");
+@import url("./editor/src/toolsWrapper/css/style.css");
 :root {
     --color: rgba(128, 0, 128, 0.8);
     --background: rgba(255, 255, 255, 0.8);

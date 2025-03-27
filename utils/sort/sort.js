@@ -18,6 +18,7 @@ export function initSort() {
     window.addEventListener("mousedown", (e) => {
         target = findAncestor(e.target, ".sortable");
         if (!target) return;
+        if(findAncestor(e.target,".notDraggable"))return;
 
 
         isDragging = true;
@@ -90,11 +91,15 @@ export function initSort() {
         if (target.parentElement.children.length == 1) return;
         if (e.movementX < 0 || e.movementY < 0) {
             other.parentElement.insertBefore(target, other)
-
+            const temp=getComputedStyle(target).flexGrow;
+            target.style.flexGrow=other.style.flexGrow;
+            other.style.flexGrow=temp
         }
         else if (e.movementX > 0 || e.movementY > 0) {
             other.parentElement.insertBefore(target, other.nextElementSibling)
-
+            const temp=getComputedStyle(other).flexGrow;
+            other.style.flexGrow=target.style.flexGrow;
+            target.style.flexGrow=temp
         }
     }
 

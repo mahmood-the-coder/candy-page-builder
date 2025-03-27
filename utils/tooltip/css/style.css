@@ -7,6 +7,6 @@
     color: var(--color);
     background-color: var(--background);
     pointer-events: none;
-
+   z-index: 20;
     overflow: hidden;
 }

@@ -1,5 +1,5 @@
 import { initServer } from "./admin/src/server/server.js";
-import { initFlexTools } from "./editor/src/flexSection/flexTools.js";
+import { initFlexRatio, initFlexTools } from "./editor/src/flexSection/flexTools/functions.js";
 import { initMenu } from "./editor/src/sectionMenu/menu/sectionMenu.js";
 import { initResize } from "./utils/resize/resize.js";
 import { initSort } from "./utils/sort/sort.js";
@@ -11,3 +11,4 @@ initMenu()
 initSort()
 initResize();
 initFlexTools()
+initFlexRatio()
